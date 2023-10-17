@@ -5,6 +5,16 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoPizza", "ContosoPizza.csproj", "{E451FD21-2D48-4AC3-BE2A-C51D058108D8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{E077D69C-239D-4D38-9B93-8DFA061801D9}"
+	ProjectSection(SolutionItems) = preProject
+		Pizza.cs = Pizza.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E9B48722-3884-496C-862A-111A7694D5BD}"
+	ProjectSection(SolutionItems) = preProject
+		PizzaService.cs = PizzaService.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
