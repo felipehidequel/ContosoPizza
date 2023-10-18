@@ -20,7 +20,7 @@ public static class PizzaService
     public static void Delete(int id)
     {
         var pizza = Get(id);
-        if (pizza != null)
+        if (pizza is null)
             return;
 
         Pizzas.Remove(pizza);
@@ -33,5 +33,11 @@ public static class PizzaService
             return;
 
         Pizzas[index] = pizza;
+    }
+
+    public static void Add(Pizza pizza)
+    {
+        pizza.Id = Interlocked.Increment(ref nextId);
+        Pizzas.Add(pizza);
     }
 }
